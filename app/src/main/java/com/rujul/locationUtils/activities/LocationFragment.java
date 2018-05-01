@@ -15,7 +15,7 @@ import com.rujul.locationUtils.Utils.FusedLocationUtils;
 import com.rujul.locationUtils.databinding.FragmentLocationBinding;
 
 /**
- * Created by imobdev-rujul on 1/5/18.
+ * Created by Rujul Gandhi on 1/5/18.
  */
 
 public class LocationFragment extends Fragment implements CurrentLocationListener {

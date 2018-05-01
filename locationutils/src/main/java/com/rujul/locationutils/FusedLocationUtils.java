@@ -27,7 +27,7 @@ import com.google.android.gms.tasks.Task;
 import static android.app.Activity.RESULT_OK;
 
 /**
- * Created by imobdev-rujul on 1/5/18.
+ * Created by Rujul Gandhi on 1/5/18.
  */
 
 public class FusedLocationUtils implements OnSuccessListener, OnFailureListener {

@@ -3,7 +3,7 @@ package com.rujul.locationutils;
 import android.location.Location;
 
 /**
- * Created by Rujul Gandhi on 21/12/17.
+ * Created by Rujul Gandhi on 1/5/18
  */
 
 public interface CurrentLocationListener {

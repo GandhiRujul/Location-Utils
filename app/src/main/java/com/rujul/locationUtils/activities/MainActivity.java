@@ -11,7 +11,7 @@ import com.rujul.locationUtils.R;
 import com.rujul.locationUtils.databinding.ActivityMainBinding;
 
 /**
- * Created by imobdev-rujul on 1/5/18.
+ * Created by Rujul Gandhi on 1/5/18.
  */
 
 public class MainActivity extends AppCompatActivity {

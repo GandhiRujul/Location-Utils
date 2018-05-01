@@ -22,12 +22,12 @@ import com.rujul.locationUtils.Utils.FusedLocationUtils;
 import com.rujul.locationUtils.databinding.ActivityLocationBinding;
 
 /**
- * Created by imobdev-rujul on 30/4/18.
+ * Created by Rujul Gandhi on 1/5/18
  */
 
 public class LocationActivity extends AppCompatActivity implements CurrentLocationListener, OnMapReadyCallback, LocationSource {
     ActivityLocationBinding binding;
-    private FusedLocationUtils fusedLocationUtils;
+    private FusedLocationUtils locationUtils;
     private GoogleMap googleMap;
     private OnLocationChangedListener onLocationChangedListener;
 
@@ -39,11 +39,11 @@ public class LocationActivity extends AppCompatActivity implements CurrentLocati
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        fusedLocationUtils = FusedLocationUtils.getInstance(this);
-        fusedLocationUtils.setInterval(1000);
-        fusedLocationUtils.setCurrentLocationListener(this);
-        fusedLocationUtils.setRepeativeUpdate(true);
-        fusedLocationUtils.createLocationRequest();
+        locationUtils = FusedLocationUtils.getInstance(this);
+        locationUtils.setInterval(1000);
+        locationUtils.setCurrentLocationListener(this);
+        locationUtils.setRepeativeUpdate(true);
+        locationUtils.createLocationRequest();
     }
 
     @Override
@@ -73,7 +73,7 @@ public class LocationActivity extends AppCompatActivity implements CurrentLocati
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        fusedLocationUtils.setOnActivityResult(requestCode, resultCode, data);
+        locationUtils.setOnActivityResult(requestCode, resultCode, data);
     }
 
     @Override
