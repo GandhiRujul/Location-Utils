@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "809914239127",
+    "firebase_url": "https://location-github.firebaseio.com",
+    "project_id": "location-github",
+    "storage_bucket": "location-github.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809914239127:android:c049b29589be19d4",
+        "android_client_info": {
+          "package_name": "com.rujul.updatelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809914239127-hgrdj48idipn6lqq0gh35avblr1qm8uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjFSAV8_tC5uhV3xa6jc0jHBzKqguuV4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
