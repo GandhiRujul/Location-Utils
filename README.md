@@ -18,7 +18,7 @@ Add repository url and dependency in application module gradle file:
  
  1) Need google play service location dependancy
    
-```implementation 'com.google.android.gms:play-services-location:X.X.X' ``` 
+    ```implementation 'com.google.android.gms:play-services-location:X.X.X' ``` 
 
  2) Need google-service.json file on your app level 
 
