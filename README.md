@@ -74,7 +74,7 @@ then *onActivityResult* you have to pass data and request code to LocationUtils 
 
 you can stop location update by *stopLocationUpdates*.
 ```java
-        locationUtils.stopLocationUpdates();
+     locationUtils.stopLocationUpdates();
 ```
 
 
