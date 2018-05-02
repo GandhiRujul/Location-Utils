@@ -17,7 +17,7 @@ Add repository url and dependency in application module gradle file:
 	}
 ### Required 
  
- 1) Need google play service location dependancy
+ 1) Need google play service location dependency
    
     ```implementation 'com.google.android.gms:play-services-location:X.X.X' ``` 
 
@@ -40,27 +40,27 @@ Create Object of FusedLocationUtils as per your requirement
      // start tracking location 
      locationUtils.createLocationRequest();
 ```
-If you want get location continuously then you have to set it as **setRepeativeUpdate(true)**. But it's not compulsory and default value is *false*. 
+If you want to get location continuously then you have to set it as **setRepeativeUpdate(true)**. But it's not compulsory and default value is *false*. 
 
 
-If you want set interval for getting location on perodical bases then you have to set it as **setInterval(1000)**. But it's it's not compulsory and default value is *2000*. 
+If you want to set interval for getting location on perodical bases then you have to set it as **setInterval(1000)**. But it's  not compulsory and default value is *2000*. 
 
-then you have to implement by *CurrentLocationListener* it will provide you three methods
+then you have to implement *CurrentLocationListener* it will provide you three methods
 
 ```java
      @Override
      public void onLocationUpdate(Location location) {
-           
+           // From here you can access location
      }
     
      @Override
      public void onNoLocationFound() {
-           
+           // When user have turned off GPS 
      }
     
      @Override
      public void onRequestPermission() {
-           
+           // You have to request for permission
      }
 ```
 then *onActivityResult* you have to pass data and request code to LocationUtils class
