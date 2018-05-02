@@ -68,7 +68,7 @@ public class FusedLocationUtils implements OnSuccessListener, OnFailureListener 
         this.need_repetive_updates = need_repetive_updates;
     }
 
-        public void createLocationRequest() {
+    public void createLocationRequest() {
         locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         locationRequest.setFastestInterval(interval);
@@ -144,7 +144,7 @@ public class FusedLocationUtils implements OnSuccessListener, OnFailureListener 
                 mLocationCallback, Looper.myLooper());
     }
 
-    private void stopLocationUpdates() {
+    public void stopLocationUpdates() {
         if (mFusedLocationClient != null && mLocationCallback != null) {
             mFusedLocationClient.removeLocationUpdates(mLocationCallback);
         }

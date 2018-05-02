@@ -17,9 +17,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.rujul.locationUtils.R;
-import com.rujul.locationUtils.Utils.CurrentLocationListener;
-import com.rujul.locationUtils.Utils.FusedLocationUtils;
 import com.rujul.locationUtils.databinding.ActivityLocationBinding;
+import com.rujul.locationutils.CurrentLocationListener;
+import com.rujul.locationutils.FusedLocationUtils;
 
 /**
  * Created by Rujul Gandhi on 1/5/18

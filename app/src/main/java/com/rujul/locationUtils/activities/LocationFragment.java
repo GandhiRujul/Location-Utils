@@ -10,9 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rujul.locationUtils.R;
-import com.rujul.locationUtils.Utils.CurrentLocationListener;
-import com.rujul.locationUtils.Utils.FusedLocationUtils;
 import com.rujul.locationUtils.databinding.FragmentLocationBinding;
+import com.rujul.locationutils.CurrentLocationListener;
+import com.rujul.locationutils.FusedLocationUtils;
 
 /**
  * Created by Rujul Gandhi on 1/5/18.
@@ -66,5 +66,10 @@ public class LocationFragment extends Fragment implements CurrentLocationListene
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         fusedLocationUtils.setOnActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }
