@@ -62,6 +62,16 @@ then you have to implement by *CurrentLocationListener* it will provide you thre
            
      }
 ```
+then *onActivityResult* you have to pass data and request code to LocationUtils class
+
+```java
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        locationUtils.setOnActivityResult(requestCode, resultCode, data);
+    }
+```
+
 
 ### Developed by
 [Rujul Gandhi](https://www.github.com/GandhiRujul)
