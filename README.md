@@ -1,5 +1,6 @@
 # Location-Utils
 
+[![](https://jitpack.io/v/GandhiRujul/Location-Utils.svg)](https://jitpack.io/#GandhiRujul/Location-Utils)
 
 ## Installation
 
