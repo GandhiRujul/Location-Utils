@@ -12,7 +12,7 @@ Add repository url and dependency in application module gradle file:
 	}
   
   	dependencies {
-	     implementation 'com.github.GandhiRujul:Location-Utils:1.0.0'
+	     implementation 'com.github.GandhiRujul:Location-Utils:1.0.1'
 	}
 ### Required 
  
@@ -71,6 +71,12 @@ then *onActivityResult* you have to pass data and request code to LocationUtils 
         locationUtils.setOnActivityResult(requestCode, resultCode, data);
     }
 ```
+
+you can stop location update by *stopLocationUpdates*.
+```java
+        locationUtils.stopLocationUpdates();
+```
+
 
 
 ### Developed by
